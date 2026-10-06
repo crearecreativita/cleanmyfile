@@ -109,7 +109,7 @@ writeFileSync(join(root, 'content/yoast.md'),
 
 ## Note
 
-- La frase chiave "${SEO.keyphrase}" è nell'H1, nel primo paragrafo, nel title e nella meta description (lo slug è il nome del tool: cleanmyfile).
+- La frase chiave "${SEO.keyphrase}" è nell'H1, nel primo paragrafo, nel title, nella meta description e nello slug.
 - Il testo sta in HTML normale: Google lo legge anche senza JavaScript. Solo il tool è in JavaScript.
 - Imposta la pagina su index, follow e inseriscila nella sitemap.
 `);
