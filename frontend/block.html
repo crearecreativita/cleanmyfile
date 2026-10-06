@@ -1,0 +1,51 @@
+<div class="ac-clean" id="ac-clean" data-ac-theme="{{THEME}}">
+  <div class="ac-card">
+    <div class="ac-tabs" role="tablist" aria-label="Che cosa vuoi pulire?">
+      <button type="button" class="ac-tab" role="tab" id="ac-clean-tab-img" aria-controls="ac-clean-p-img" aria-selected="true" data-ac-tab="img">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+        Immagini
+      </button>
+      <button type="button" class="ac-tab" role="tab" id="ac-clean-tab-pdf" aria-controls="ac-clean-p-pdf" aria-selected="false" tabindex="-1" data-ac-tab="pdf">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+        PDF
+      </button>
+    </div>
+    <ol class="ac-steps">
+      <li>Carica i file e guarda cosa contengono</li>
+      <li>Cancella tutto o modifica campo per campo</li>
+      <li>Scarica i file puliti</li>
+    </ol>
+
+    <div class="ac-panel" role="tabpanel" id="ac-clean-p-img" aria-labelledby="ac-clean-tab-img" data-ac-panel="img">
+      <input type="file" class="ac-file-input" multiple accept="image/jpeg,image/png,image/webp,image/tiff,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.tif,.tiff,.heic,.heif" data-ac="input" tabindex="-1" aria-hidden="true">
+      <div class="ac-drop" role="button" tabindex="0" data-ac="drop" aria-label="Carica immagini: trascinale qui o premi Invio per sceglierle">
+        <span class="ac-drop-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg></span>
+        <strong>Trascina qui le immagini, o clicca per selezionarle</strong>
+        <span>JPEG, PNG, WebP, TIFF, HEIC · massimo 10 immagini alla volta, 15 MB ciascuna</span>
+      </div>
+      <p class="ac-msg" data-ac="msg" role="alert" hidden></p>
+      <div class="ac-bar" data-ac="bar" hidden></div>
+      <ul class="ac-list" data-ac="list" aria-live="polite"></ul>
+      <p class="ac-disclaimer">Nota: questo strumento pulisce i metadati tecnici del file (EXIF, GPS, dati del dispositivo, XMP, IPTC, commenti). Nei JPEG resta l’orientamento, altrimenti le foto scattate in verticale si vedrebbero ruotate, e in tutti i formati il profilo colore ICC, per non alterare i colori. Non è pensato per rimuovere i marcatori di provenienza dei contenuti generati da AI (come i watermark invisibili tipo SynthID): quei sistemi servono a garantire trasparenza sull’origine di un’immagine.</p>
+    </div>
+
+    <div class="ac-panel" role="tabpanel" id="ac-clean-p-pdf" aria-labelledby="ac-clean-tab-pdf" data-ac-panel="pdf" hidden>
+      <input type="file" class="ac-file-input" multiple accept="application/pdf,.pdf" data-ac="input" tabindex="-1" aria-hidden="true">
+      <div class="ac-drop" role="button" tabindex="0" data-ac="drop" aria-label="Carica PDF: trascinali qui o premi Invio per sceglierli">
+        <span class="ac-drop-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg></span>
+        <strong>Trascina qui i PDF, o clicca per selezionarli</strong>
+        <span>PDF · massimo 5 file alla volta, 15 MB ciascuno</span>
+      </div>
+      <p class="ac-msg" data-ac="msg" role="alert" hidden></p>
+      <div class="ac-bar" data-ac="bar" hidden></div>
+      <ul class="ac-list" data-ac="list" aria-live="polite"></ul>
+      <p class="ac-disclaimer">Nota: questo strumento pulisce i metadati del documento PDF (titolo, autore, oggetto, parole chiave, applicazione di creazione, software di produzione, date e blocco XMP). Non rimuove contenuti come commenti, allegati, livelli o script eventualmente incorporati nel file, e non lavora sui PDF protetti da password.</p>
+    </div>
+
+    <p class="ac-privacy">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      <span>Tutta l’elaborazione avviene nel tuo browser: nessun file viene caricato o salvato su un server.</span>
+    </p>
+    <div class="ac-toast" data-ac="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+</div>

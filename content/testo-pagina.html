@@ -1,0 +1,46 @@
+<!-- TESTO DELLA PAGINA "Rimuovere metadati" — HTML puro, leggibile da Google senza JavaScript.
+     Se il tema stampa già il titolo della pagina come H1, togli l'<h1> qui sotto e metti lo stesso testo come titolo della pagina.
+     Generato da scripts/build-content.mjs: non modificare a mano, cambia lo script o content/faq.json. -->
+
+<!-- ===== PARTE 1: sopra il tool ===== -->
+<h1>Rimuovere metadati da immagini e PDF, gratis e senza caricare nulla</h1>
+<p>Mandi una foto a un cliente, o metti un PDF sul sito. Prima conviene rimuovere i metadati: dentro quei file c’è molto più di quello che vedi, dal punto esatto in cui hai scattato al nome di chi ha creato il documento.</p>
+<p>Carica qui sotto fino a 10 immagini o 5 PDF e guarda cosa contengono. Poi <strong>cancelli tutto con un click</strong>, oppure modifichi i campi uno per uno. Nessun file lascia il tuo computer: l’elaborazione avviene nel browser.</p>
+
+<!-- ===== QUI VA IL BLOCCO DEL TOOL: wordpress/blocco-wordpress.html ===== -->
+
+<!-- ===== PARTE 2: sotto il tool ===== -->
+<h2>Che cosa sono i metadati, in due righe</h2>
+<p>Sono dati scritti dentro il file, invisibili a occhio. Nelle foto si chiamano EXIF e raccontano come, quando e con cosa è stato fatto lo scatto. Nei PDF sono titolo, autore, programma di creazione e date. Lo strumento li mostra tutti prima di toccare qualsiasi cosa, così decidi tu.</p>
+
+<h2>Quando conviene toglierli</h2>
+<p><strong>Prima di pubblicare o inviare una foto scattata a casa, in studio o in un luogo che non vuoi far trovare.</strong> Le coordinate GPS, se la localizzazione della fotocamera è attiva, finiscono nel file.</p>
+<p><strong>Prima di mandare un PDF a un cliente.</strong> Il campo autore e il titolo possono portarsi dietro il nome di un collega o di un documento da cui sei partito. Capita più spesso di quanto pensi, quando si lavora riciclando file.</p>
+<p>Molte piattaforme tolgono i metadati da sole quando carichi un’immagine, ma non tutte, e non sai cosa succede con una mail o con un file mandato come documento. Pulire prima costa trenta secondi.</p>
+
+<h2>Quando invece non serve</h2>
+<p>Se pubblichi la foto di un prodotto fatta in laboratorio, i metadati sono innocui. Anzi: autore e copyright dentro il file possono aiutarti a rivendicare un’immagine. Per questo c’è anche la modifica campo per campo, non solo il tasto “cancella tutto”.</p>
+
+<h2>Cosa tolgo e cosa lascio</h2>
+<p>Nelle immagini tolgo EXIF, GPS, XMP, IPTC e commenti <strong>senza ricomprimere i pixel</strong>: la qualità resta identica. Nei JPEG lascio l’orientamento, altrimenti le foto verticali si vedrebbero storte, e il profilo colore, per non cambiare i colori. Nei PDF cancello i campi del documento e il blocco XMP, che ripete gli stessi dati. Sotto ogni file vedi sempre cosa è rimasto.</p>
+<p>Non tocco invece commenti, allegati e script dentro un PDF, e non rimuovo i watermark invisibili dei generatori di immagini. Se il documento è delicato, controllalo anche a mano.</p>
+
+<h2>Domande frequenti</h2>
+<h3>Cosa sono i metadati di una foto o di un PDF?</h3>
+<p>Sono informazioni scritte dentro il file, che non vedi guardando l'immagine o il documento. In una foto si chiamano EXIF: data e ora, modello del telefono, impostazioni dello scatto e, se la localizzazione è attiva, le coordinate GPS. In un PDF sono titolo, autore, programma usato per crearlo e date di creazione e modifica.</p>
+<h3>Le foto dello smartphone contengono la mia posizione?</h3>
+<p>Se alla fotocamera hai dato il permesso di usare la posizione, sì: le coordinate finiscono nei metadati e chi riceve il file originale può leggerle. Qui le vedi evidenziate e le puoi cancellare, oppure sostituire con altre.</p>
+<h3>I miei file vengono caricati su un server?</h3>
+<p>No. L'elaborazione avviene nel tuo browser: il file non viene inviato, trasmesso o salvato da nessuna parte. Il browser scarica solo alcune librerie di servizio (da jsDelivr), che servono a leggere e riscrivere i PDF e a creare lo zip; i tuoi file non c'entrano.</p>
+<h3>La qualità dell'immagine peggiora dopo la pulizia?</h3>
+<p>No, per JPEG, PNG e WebP. Tolgo solo i blocchi di metadati e non ricomprimo l'immagine: i pixel restano identici. Per formati come HEIC e TIFF, dove il browser riesce a leggerli (Safari), il file viene riconvertito in PNG.</p>
+<h3>Perché in un JPEG pulito resta l'orientamento?</h3>
+<p>Perché senza quel dato le foto scattate in verticale si vedrebbero ruotate di lato. È un numero da 1 a 8, non contiene nulla di personale. Stesso discorso per il profilo colore ICC, che lascio per non alterare i colori. Nei dettagli del file vedi sempre cosa è rimasto.</p>
+<h3>Posso modificare i metadati invece di cancellarli?</h3>
+<p>Sì. Nei JPEG puoi cambiare autore, copyright, descrizione, software, data dello scatto e coordinate GPS. Nei PDF titolo, autore, oggetto, parole chiave, applicazione di creazione, software di produzione e date. È utile, per esempio, per lasciare il tuo nome come autore e togliere tutto il resto.</p>
+<h3>Funziona con i PDF protetti da password?</h3>
+<p>No. Un PDF cifrato non si può riscrivere senza la password, quindi lo strumento lo segnala e non lo tocca. Togli prima la protezione dal programma con cui l'hai creato.</p>
+<h3>Questo strumento toglie tutto quello che c'è nel file?</h3>
+<p>Tolgo i metadati: EXIF, GPS, XMP, IPTC e commenti nelle immagini; i campi del documento e il blocco XMP nei PDF. Non tocco commenti, allegati, livelli o script incorporati in un PDF, e non rimuovo i watermark invisibili dei generatori di immagini. Se un documento è molto delicato, controllalo comunque a mano.</p>
+
+<p>Stai preparando immagini e documenti per un sito o per una stampa e vuoi che siano a posto fin dall’inizio? <a href="https://www.crearecreativita.it/parliamo/">Scrivimi</a>: ne parliamo.</p>

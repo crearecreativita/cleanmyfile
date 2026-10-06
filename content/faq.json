@@ -1,0 +1,34 @@
+[
+  {
+    "q": "Cosa sono i metadati di una foto o di un PDF?",
+    "a": "Sono informazioni scritte dentro il file, che non vedi guardando l'immagine o il documento. In una foto si chiamano EXIF: data e ora, modello del telefono, impostazioni dello scatto e, se la localizzazione è attiva, le coordinate GPS. In un PDF sono titolo, autore, programma usato per crearlo e date di creazione e modifica."
+  },
+  {
+    "q": "Le foto dello smartphone contengono la mia posizione?",
+    "a": "Se alla fotocamera hai dato il permesso di usare la posizione, sì: le coordinate finiscono nei metadati e chi riceve il file originale può leggerle. Qui le vedi evidenziate e le puoi cancellare, oppure sostituire con altre."
+  },
+  {
+    "q": "I miei file vengono caricati su un server?",
+    "a": "No. L'elaborazione avviene nel tuo browser: il file non viene inviato, trasmesso o salvato da nessuna parte. Il browser scarica solo alcune librerie di servizio (da jsDelivr), che servono a leggere e riscrivere i PDF e a creare lo zip; i tuoi file non c'entrano."
+  },
+  {
+    "q": "La qualità dell'immagine peggiora dopo la pulizia?",
+    "a": "No, per JPEG, PNG e WebP. Tolgo solo i blocchi di metadati e non ricomprimo l'immagine: i pixel restano identici. Per formati come HEIC e TIFF, dove il browser riesce a leggerli (Safari), il file viene riconvertito in PNG."
+  },
+  {
+    "q": "Perché in un JPEG pulito resta l'orientamento?",
+    "a": "Perché senza quel dato le foto scattate in verticale si vedrebbero ruotate di lato. È un numero da 1 a 8, non contiene nulla di personale. Stesso discorso per il profilo colore ICC, che lascio per non alterare i colori. Nei dettagli del file vedi sempre cosa è rimasto."
+  },
+  {
+    "q": "Posso modificare i metadati invece di cancellarli?",
+    "a": "Sì. Nei JPEG puoi cambiare autore, copyright, descrizione, software, data dello scatto e coordinate GPS. Nei PDF titolo, autore, oggetto, parole chiave, applicazione di creazione, software di produzione e date. È utile, per esempio, per lasciare il tuo nome come autore e togliere tutto il resto."
+  },
+  {
+    "q": "Funziona con i PDF protetti da password?",
+    "a": "No. Un PDF cifrato non si può riscrivere senza la password, quindi lo strumento lo segnala e non lo tocca. Togli prima la protezione dal programma con cui l'hai creato."
+  },
+  {
+    "q": "Questo strumento toglie tutto quello che c'è nel file?",
+    "a": "Tolgo i metadati: EXIF, GPS, XMP, IPTC e commenti nelle immagini; i campi del documento e il blocco XMP nei PDF. Non tocco commenti, allegati, livelli o script incorporati in un PDF, e non rimuovo i watermark invisibili dei generatori di immagini. Se un documento è molto delicato, controllalo comunque a mano."
+  }
+]
