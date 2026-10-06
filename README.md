@@ -45,7 +45,7 @@ node scripts/build-content.mjs         # rigenera testo pagina, JSON-LD e Yoast
 
 ## Incollare lo strumento in Elementor
 
-1. Crea la pagina **Rimuovere metadati** con slug `rimuovere-metadati` (se usi un altro slug, cambia `pageUrl` in `config.json` e riesegui i due build).
+1. Crea la pagina **Rimuovere metadati** con slug `cleanmyfile` (se usi un altro slug, cambia `pageUrl` in `config.json` e riesegui i due build).
 2. Apri `content/testo-pagina.html`: contiene la parte sopra il tool, il segnaposto e la parte sotto. Usa i widget *Titolo* e *Editor di testo* (o un widget *HTML*) per le due parti.
 3. Nel punto del segnaposto trascina un widget **HTML** e incolla tutto il contenuto di `wordpress/blocco-wordpress.html`. Contiene CSS, markup e JavaScript.
 4. In fondo alla pagina aggiungi un altro widget HTML con `content/json-ld.html` (schema WebApplication + FAQPage).
